@@ -80,7 +80,7 @@ def scrape_chamber(limit=2000):
             page.wait_for_selector(
                 "body > div.wrapper > main > section:nth-child(2) > div.container > section.member-cats > div > div")
 
-        #close browser
+        #close the browser
         browser.close()
         save_data(data)
         print(f"scraping complete, total profiles scraped: {profilecount}")
